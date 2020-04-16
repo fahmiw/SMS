@@ -51,9 +51,7 @@ public class MainActivity extends AppCompatActivity {
         sendSMS("083116445145", "Hello my friends!");
     }
     //---sends an SMS message--
-    private void sendSMS(String phoneNumber, String message)
-
-    {
+    private void sendSMS(String phoneNumber, String message) {
         SmsManager sms = SmsManager.getDefault();
         sms.sendTextMessage(phoneNumber, null, message, null, null);
     }
